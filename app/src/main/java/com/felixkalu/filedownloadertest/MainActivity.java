@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //this Async task is for downloading files to the location we want. We use Async task
+    //to download files instead of download manager because with this we can download files to any folders we want. With download manager,
+    //we can only download to public folders where users have access to.
     class DownloadFileFromURL extends AsyncTask<String, String, String> {
 
         @Override
